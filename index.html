@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ensino, tecnologia e crescimento digital, unidos em um só lugar." />
 <meta property="og:type" content="website" />
 <link rel="canonical" href="https://professorfrankborges.com.br/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23151912'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' fill='%23F4B942' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23070a12'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' fill='%232F6FED' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -20,9 +20,9 @@
     theme: {
       extend: {
         colors: {
-          slate: { 950: '#0d100c' },
-          board: { DEFAULT: '#12160f', line: '#2a3024' },
-          chalk: { yellow: '#F4B942', mint: '#7CFFB2', white: '#F3F1E7' },
+          slate: { 950: '#070a12' },
+          board: { DEFAULT: '#0a0e18', line: '#1c2740' },
+          chalk: { yellow: '#2F6FED', mint: '#5FA8F5', white: '#F1F4F9' },
         },
         fontFamily: {
           display: ['"Space Grotesk"', 'sans-serif'],
@@ -66,11 +66,11 @@
   .terminal-caret::after {
     content: '▍';
     animation: blink 1s step-end infinite;
-    color: #F4B942;
+    color: #2F6FED;
   }
   @keyframes blink { 50% { opacity: 0; } }
 
-  ::selection { background: #F4B942; color: #12160f; }
+  ::selection { background: #2F6FED; color: #ffffff; }
 
   .card-hover { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
   .card-hover:hover { transform: translateY(-6px); }
@@ -104,7 +104,7 @@
       <button id="theme-toggle" aria-label="Alternar tema" class="theme-toggle-track w-11 h-6 rounded-full bg-black/10 dark:bg-chalk-yellow/20 relative flex items-center px-1">
         <span id="theme-dot" class="w-4 h-4 rounded-full bg-[#1b1e17] dark:bg-chalk-yellow transition-transform duration-300 translate-x-0 dark:translate-x-5"></span>
       </button>
-      <a href="#contato" class="hidden sm:inline-block bg-chalk-yellow text-[#12160f] font-semibold text-sm px-4 py-2 rounded-lg hover:brightness-95 transition">Falar comigo</a>
+      <a href="#contato" class="hidden sm:inline-block bg-chalk-yellow text-white font-semibold text-sm px-4 py-2 rounded-lg hover:brightness-95 transition">Falar comigo</a>
     </div>
   </nav>
 </header>
@@ -132,7 +132,7 @@
         <span class="font-mono text-xs px-3 py-1.5 rounded-full border border-chalk-yellow/40 text-chalk-yellow">Criador de Conteúdo</span>
       </div>
       <div class="mt-7 flex flex-wrap gap-4">
-        <a href="#projetos" class="bg-chalk-yellow text-[#12160f] font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition">Conhecer Projetos</a>
+        <a href="#projetos" class="bg-chalk-yellow text-white font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition">Conhecer Projetos</a>
         <a href="#contato" class="border border-black/15 dark:border-white/20 px-6 py-3 rounded-lg font-semibold hover:border-chalk-yellow hover:text-chalk-yellow transition">Entrar em Contato</a>
         <a href="#" id="download-cv" class="px-6 py-3 rounded-lg font-semibold text-[#3a3f33] dark:text-chalk-white/70 hover:text-chalk-mint transition flex items-center gap-2">
           Baixar Currículo <span aria-hidden="true">↓</span>
@@ -143,7 +143,7 @@
     <div class="reveal" style="transition-delay:.15s">
       <div class="relative mx-auto max-w-sm">
         <div class="absolute -inset-3 rounded-[28px] border-2 border-dashed border-chalk-yellow/40 dark:border-chalk-mint/30"></div>
-        <div class="relative rounded-[24px] overflow-hidden aspect-[4/5] bg-gradient-to-br from-[#1c2216] to-[#0d100c] border border-black/10 dark:border-white/10">
+        <div class="relative rounded-[24px] overflow-hidden aspect-[4/5] bg-gradient-to-br from-[#101a30] to-[#05070d] border border-black/10 dark:border-white/10">
           <img src="images/foto-frank.jpg" alt="Professor Frank Borges" class="w-full h-full object-cover object-top" />
         </div>
         <div class="absolute -bottom-5 -left-5 bg-chalk-white dark:bg-[#181d13] border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 shadow-lg">
@@ -235,8 +235,9 @@
       <p class="reveal font-mono text-sm text-chalk-mint mb-3">números</p>
       <div id="counters" class="grid grid-cols-2 gap-6 mt-2"></div>
       <div class="reveal mt-10 p-6 rounded-xl border border-dashed border-chalk-yellow/40">
-        <p class="font-mono text-sm text-chalk-yellow mb-2">$ frank --niches</p>
-        <p class="text-sm text-[#3a3f33] dark:text-chalk-white/70">@techsemsegredo · @frankengenheirotech · @proffrankborges.vidaativa</p>
+        <p class="font-mono text-sm text-chalk-yellow mb-2">$ frank --canais</p>
+        <p class="text-sm text-[#3a3f33] dark:text-chalk-white/70">IG: @proffrankborges.vidaativa · @frankengenheirotech · @techsensegredo</p>
+        <p class="text-sm text-[#3a3f33] dark:text-chalk-white/70 mt-1">TikTok: @frankborges741 · @frankdesouzaborges · @fwbike740</p>
       </div>
     </div>
   </div>
@@ -285,7 +286,7 @@
       <input required name="email" type="email" placeholder="Email" class="bg-black/[.03] dark:bg-white/[.05] border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 outline-none focus:border-chalk-yellow transition" />
       <input name="telefone" type="tel" placeholder="Telefone (opcional)" class="sm:col-span-2 bg-black/[.03] dark:bg-white/[.05] border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 outline-none focus:border-chalk-yellow transition" />
       <textarea required name="mensagem" rows="4" placeholder="Mensagem" class="sm:col-span-2 bg-black/[.03] dark:bg-white/[.05] border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 outline-none focus:border-chalk-yellow transition"></textarea>
-      <button type="submit" class="sm:col-span-2 bg-chalk-yellow text-[#12160f] font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition">Enviar Mensagem</button>
+      <button type="submit" class="sm:col-span-2 bg-chalk-yellow text-white font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition">Enviar Mensagem</button>
       <p id="form-status" class="sm:col-span-2 text-sm text-chalk-mint hidden">Mensagem pronta! Abrindo seu app de email...</p>
     </form>
   </div>
@@ -309,14 +310,20 @@
     </div>
     <div>
       <p class="font-semibold mb-3">Redes sociais</p>
+      <p class="font-mono text-xs text-chalk-mint mb-2 mt-1">Instagram</p>
+      <ul class="space-y-2 text-[#3a3f33] dark:text-chalk-white/60 mb-4">
+        <li><a href="https://instagram.com/proffrankborges.vidaativa" target="_blank" class="hover:text-chalk-yellow">@proffrankborges.vidaativa</a></li>
+        <li><a href="https://instagram.com/frankengenheirotech" target="_blank" class="hover:text-chalk-yellow">@frankengenheirotech</a></li>
+        <li><a href="https://instagram.com/techsensegredo" target="_blank" class="hover:text-chalk-yellow">@techsensegredo</a></li>
+      </ul>
+      <p class="font-mono text-xs text-chalk-mint mb-2">TikTok</p>
+      <ul class="space-y-2 text-[#3a3f33] dark:text-chalk-white/60 mb-4">
+        <li><a href="https://tiktok.com/@frankborges741" target="_blank" class="hover:text-chalk-yellow">@frankborges741</a></li>
+        <li><a href="https://tiktok.com/@frankdesouzaborges" target="_blank" class="hover:text-chalk-yellow">@frankdesouzaborges</a></li>
+        <li><a href="https://tiktok.com/@fwbike740" target="_blank" class="hover:text-chalk-yellow">@fwbike740</a></li>
+      </ul>
+      <p class="font-mono text-xs text-chalk-mint mb-2">Outras redes</p>
       <ul class="space-y-2 text-[#3a3f33] dark:text-chalk-white/60">
-        <li><a href="https://instagram.com/techsemsegredo" target="_blank" class="hover:text-chalk-yellow">Instagram — Tech</a></li>
-        <li><a href="https://instagram.com/frankengenheirotech" target="_blank" class="hover:text-chalk-yellow">Instagram — Engenheiro Tech</a></li>
-        <li><a href="https://instagram.com/proffrankborges.vidaativa" target="_blank" class="hover:text-chalk-yellow">Instagram — Vida Ativa</a></li>
-        <li><a href="#" target="_blank" class="hover:text-chalk-yellow">TikTok</a></li>
-        <li><a href="#" target="_blank" class="hover:text-chalk-yellow">Facebook</a></li>
-        <li><a href="#" target="_blank" class="hover:text-chalk-yellow">Threads</a></li>
-        <li><a href="#" target="_blank" class="hover:text-chalk-yellow">X (Twitter)</a></li>
         <li><a href="#" target="_blank" class="hover:text-chalk-yellow">LinkedIn</a></li>
         <li><a href="#" target="_blank" class="hover:text-chalk-yellow">GitHub</a></li>
         <li><a href="#" target="_blank" class="hover:text-chalk-yellow">YouTube</a></li>
@@ -345,7 +352,7 @@
 <a href="https://wa.me/55" target="_blank" aria-label="WhatsApp" class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-105 transition">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-white"><path d="M16 .3C7.4.3.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L.3 31.7l8.1-2.1c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.6-7 15.6-15.6C31.6 7.3 24.6.3 16 .3zm0 28.4c-2.4 0-4.7-.6-6.8-1.9l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.3 0-7.4 6-13.4 13.4-13.4s13.4 6 13.4 13.4-6.2 13.4-13.6 13.4z"/></svg>
 </a>
-<button id="back-to-top" aria-label="Voltar ao topo" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-chalk-yellow text-[#12160f] font-bold shadow-lg hover:scale-105 transition opacity-0 pointer-events-none">↑</button>
+<button id="back-to-top" aria-label="Voltar ao topo" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-chalk-yellow text-white font-bold shadow-lg hover:scale-105 transition opacity-0 pointer-events-none">↑</button>
 
 <script>
 /* ============ DADOS (edite aqui — futuramente vira painel admin) ============ */
@@ -416,7 +423,7 @@ document.getElementById('specialties').innerHTML = specialties.map(s => card(s.t
 document.getElementById('services').innerHTML = services.map(s => card(s.t, s.d)).join('');
 document.getElementById('projects').innerHTML = projects.map(p => `
   <div class="reveal card-hover rounded-xl overflow-hidden border border-black/5 dark:border-white/5 bg-black/[.03] dark:bg-white/[.04]">
-    <div class="aspect-video bg-gradient-to-br from-[#1c2216] to-[#0d100c] flex items-center justify-center font-mono text-chalk-yellow/60 text-sm">[ preview ]</div>
+    <div class="aspect-video bg-gradient-to-br from-[#101a30] to-[#05070d] flex items-center justify-center font-mono text-chalk-yellow/60 text-sm">[ preview ]</div>
     <div class="p-6">
       <h3 class="font-display font-semibold text-lg mb-2">${p.t}</h3>
       <p class="text-sm text-[#3a3f33] dark:text-chalk-white/70 mb-3">${p.d}</p>
